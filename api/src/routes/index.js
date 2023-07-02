@@ -4,10 +4,13 @@ const {API_KEY} = process.env;
 // Ejemplo: const authRouter = require('./auth.js');
 
 
-const router = Router();
+const mainRouter = Router();
 
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 
+mainRouter.get("/gasd",(req,res)=>{
+    res.status(200).send("Hola");
+})
 
-module.exports = router;
+module.exports = mainRouter;
